@@ -1,6 +1,8 @@
-// Get month number
+//Get month number 
+'use strict';
 
-Months = [
+
+const months = [
   'jan',
   'feb',
   'mar',
