@@ -17,12 +17,11 @@ const months = [
   'dec',
 ];
 
-Month = (s) => {
-  l = Months.length;
-  for (let i = 0; i < l; i++) {
-    if (s.toLowerCase().startsWith(Months[i])) return i + 1;
-  }
-  return -1;
+const month = (s) => {
+  const hit = months.indexOf(s); 
+  return hit +1 || -1; 
 };
+
+console.log(month('fub'));
 
 require('../Tests/month.js')(Month);
